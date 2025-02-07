@@ -81,3 +81,149 @@ if((sallery > 27000 || hasCar == true) && bcs == false){
 }else{
     console.log("get out");
 }
+                  
+
+
+//    discount price 
+ 
+let pricee =    1000 ;
+if (pricee>=5000 ){
+    let discountt = pricee*10 /100;
+    let afPrice = pricee - discountt;
+    console.log(afPrice);
+}
+else if (pricee>=4000 ){
+    let discountt = pricee*5 /100;
+    let afPrice = pricee - discountt;
+    console.log(afPrice);
+}
+else if (pricee>=2000 ){
+    let discountt = pricee*3 /100;
+    let afPrice = pricee - discountt;
+    console.log(afPrice);
+}
+else{
+    console.log(pricee);
+}
+
+            // resturant price 
+
+let priceee = 1000;
+let agee = 20;
+if(agee >=60){
+    let priceIs = priceee *50 /100;
+    let payBill = priceee - priceIs;
+    console.log(payBill);
+}
+else if (agee >=25){
+    let priceIs = priceee *10/100;
+    let payBill = priceee - priceIs;
+    console.log(payBill);
+}
+else if (agee >=13){
+    let priceIs = priceee *10/100;
+    let payBill = priceee- priceIs;
+    console.log(payBill);
+}
+else{
+    console.log(pricee);
+}
+
+
+// nested condition 
+
+let taka = 100;
+if(taka > 500){
+    console.log("boro you are a rich kit you are my frind");
+}
+else{
+    if(taka >= 100){
+        console.log("Bro you are middle person you are not ok");
+    }
+    else{
+        if(taka >=10){
+            console.log("dear friend you buy banana and push your ...........");
+        }
+        else{
+            console.log("this is human behavior");
+        }
+    }
+}
+
+
+
+/**
+ * TERNARY  --> three
+ * 
+ *     ?     :
+ * 
+ *    condition ?  do something when true : do something when false
+ *   
+ */
+// let ageee = 18;
+// ageee >= 22 ? console.log("vote dio") : console.log("ghumai thako");
+
+let pprice = 1000;
+let liderr = true;
+// if (liderr === false){
+//     pprice = 0;
+// }
+// else{
+//     pprice= pprice+ 100;
+// }
+// console.log(pprice);
+ 
+ 
+
+// pprice = liderr === true ? 0 : pprice + 1000;
+// console.log(pprice);
+
+//    semi advanch ternary 
+
+if(liderr == true){
+    if(pprice >1000){
+        pprice = pprice /2;
+    }
+    else{
+        pricee=0;
+    }
+}
+else{
+    pricee = pricee;
+}
+console.log(pprice);
+
+pprice = liderr === true ? pricee >   1000 ? pricee/2 :0 : pricee + 100;
+console.log(pprice);
+
+
+if (liderr){
+    console.log("lider is comming");
+}
+else{
+    console.log("giv up all chere");
+}
+
+        //   false chacking 
+
+let passed = false;
+
+if(passed === false){
+    console.log('you are good boy');
+}
+else{
+    console.log('you aree bad boy ');
+}
+
+if(!passed){
+
+}
+
+        // double not ligical operator 
+
+if(!!passed){
+    console.log("good");
+}
+else{
+    console.log("bad");
+}
