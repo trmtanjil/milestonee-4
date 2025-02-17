@@ -47,3 +47,18 @@ let s = [90, 100 ]
 let main= p.concat(q ,s);
 
 console.log(main);
+
+let userName = "tanjil324";
+let password = "33242";
+
+if(userName === "tanjil324"){
+    if(password === "33242"){
+        console.log("info submited");
+    }
+    else{
+        console.log("password incorrect");
+    }
+}
+else{
+    console.log("user name incorrect");
+}
