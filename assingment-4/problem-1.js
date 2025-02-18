@@ -88,7 +88,36 @@
 
 
 
+// function  isBestFriend( f1 , f2 ) {
+//     if(typeof f1 !== 'object' || typeof f2 !== 'object' ){
+//         return 'invalid';
+//     }
+//    if(f1.bestFriend ===f2.roll && f2.bestFriend ===f1.roll){
+//     return true;
+//    }
+//    else{
+//     return false
+//    }
+// }
+// let obj1 ={ name: "hashem", roll: 2, bestFriend: 1}
+// let obj2 =  { name: "kashem", roll: 1, bestFriend: 2 }
 
+// console.log(isBestFriend(obj1, obj2));
+ 
 
-
-
+function  calculateWatchTime( times ) {
+    let sum = 0; 
+    for(let allTime of times){
+         sum = sum + allTime; 
+        if(typeof sum === 'string'){
+            return 'invalid'
+        }
+    }
+    let hower = Math.floor(sum/3600);
+    let remainSec = sum%3600;
+    let minut = Math.floor(remainSec/60);
+    let mainSec = remainSec % 60;
+    return {hower:hower, minut:minut, second:mainSec}
+}
+let resust = calculateWatchTime([100, 3800, "90" ]);
+console.log(resust);
