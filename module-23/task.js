@@ -82,3 +82,44 @@ function findAveragePhonePrice(averagePrice){
 let totalPrice = findAveragePhonePrice(phones)
 console.log("averrage price is : ", totalPrice);
 
+
+
+
+// function  electionResult(votes) {
+//     let winMan = {};
+//     let maxvote='';
+//     let mostVote = 0;
+//     let draw = [];
+
+//     if(!Array.isArray(votes)){
+//         return 'invalid'
+//     } 
+//     else if(votes.length<0){
+//         return "Draw";
+//     }
+
+
+//     for(let item of votes){  
+//     if(winMan[item]){
+//         winMan[item] = winMan[item]+1;
+//     }
+//     else{
+//         winMan[item]=1;
+//     }
+// }
+//     for(let mostv in winMan){
+//         if(winMan[mostv]>mostVote){
+//             maxvote = mostv;
+//             mostVote =winMan[mostv];
+//         } 
+//         if (winMan[mostv] === mostVote) {
+//             draw.push(mostv);
+//         }
+//     }
+//     if (draw.length > 1) {
+//     return "Draw";
+// }
+//     return maxvote
+// }
+// let resust =electionResult (["mango", "banana", "mango", "banana", "mango"]);
+// console.log(resust);
