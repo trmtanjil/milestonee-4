@@ -1,4 +1,8 @@
 
+
+
+//?1
+
 function avrgVote(vote){
 let mango = 0;
 let banana = 0;
